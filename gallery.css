@@ -1,0 +1,67 @@
+.gallery-long{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: auto;
+    /* box-shadow: 0px 0px 5px white; */
+    align-items: center; /* Center the image verticall */
+    display: flex; /* Turn this into a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: visible;
+    padding: 0%;
+    z-index: 45;
+}
+
+.gallery-pic{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    margin: 1%;
+    align-items: center; /* Center the image verticall */
+    display: flex; /* Turn this into a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    backdrop-filter: blur(25px);
+    transition: all linear .5s;
+}
+
+.gallery-pic:hover{
+    /* height: 75%; */
+    scale: 105%;
+    z-index: 50;
+    transition: all linear .5s;
+
+}
+
+.gallery-pic:hover img{
+    height: fit-content;
+    scale: 100%;
+    filter: blur(0px);
+    transition: all linear .5s;
+    position: static;
+}
+
+.gallery-pic:focus{
+    width: 105%;
+    height: 105%;
+    padding: 5%;
+    overflow: scroll;
+}
+
+.gallery-pic:focus img{
+    height: fit-content;
+    scale: 250%;
+    filter: blur(0px);
+    transition: all linear .5s;
+    margin: auto;
+}
+
+.gallery-pic img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    filter: blur(5px);
+    transition: all linear .5s;
+}

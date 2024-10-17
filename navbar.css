@@ -1,0 +1,88 @@
+.navbar {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Vertically center items */
+    position: sticky;
+    top: 0;
+    z-index: 150;
+    backdrop-filter: blur(15px);
+}
+
+/* logo */
+.navlogo {
+    width: 50px;
+    height: 50px;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    /* backdrop-filter: blur(15px); */
+    border: 2px solid rgba(255, 255, 255, 0);
+    display: flex; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding: 5px; /* Add some padding for spacing */
+    transform: translateX(15%);
+}
+
+.navlogo img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    margin: auto;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255)) invert(1);
+    transition: all linear .5s;
+
+}
+
+.navlogo img:hover {
+    max-width: 100%; /* Ensure the image fits within the container */
+    margin: auto;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)) invert(0);
+    transition: all linear .5s;
+}
+
+/* buttons */
+.navbar #buttontable{
+    margin-left: auto; margin-right: auto;
+    width: fit-content;
+}
+
+.navbar button {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 10px; /* Add padding to buttons */
+    z-index: 51;
+    margin-left: 5px; margin-right: 5px;
+    transition: all linear 1s;
+}
+
+.navbar button:hover {
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: all linear 1s;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+
+/* logo */
+.navlogo {
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.navbar button {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1px 5px; /* Add padding to buttons */
+    margin-left: -px; margin-right: -px;
+    font-size: x-small;
+}
+
+  }

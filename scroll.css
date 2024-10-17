@@ -1,0 +1,14 @@
+.scroll-content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    animation: scrollUp 20s linear infinite;
+}
+@keyframes scrollUp {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: -100%;
+    }
+}
