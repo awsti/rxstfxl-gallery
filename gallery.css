@@ -1,3 +1,25 @@
+#gallery-button-dd:hover .gallery-dd{
+opacity: 100;
+width: 250px; height: 250px;
+size: 100%;
+display: block;
+transition: all 1s ease-in-out;
+position: inherit;
+
+
+}
+
+
+.gallery-dd{
+    width: 0px; height: 0px;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    size: 0%;
+    display: none;
+}
+
 .gallery-long{
     width: 100%;
     height: fit-content;
